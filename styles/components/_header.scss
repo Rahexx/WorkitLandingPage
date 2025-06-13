@@ -1,0 +1,51 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30.0625rem;
+  padding: $space-32 $space-20;
+  background: $purple-900;
+
+  &__title {
+    margin: $space-56 0 $space-40;
+    color: $white;
+    text-align: center;
+    font-size: $text-48;
+    font-weight: $font-semibold;
+    line-height: $line-height-100;
+  }
+
+  &__underline {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 9.4375rem;
+      height: 0.1875rem;
+      background: $green;
+    }
+  }
+
+  &__learn {
+    height: 3.3125rem;
+    width: 9.4375rem;
+    padding: $space-12 $space-32;
+    background: $green;
+    color: $purple-900;
+    line-height: $line-height-180;
+    font-weight: $font-bold;
+  }
+
+  &__hero {
+    position: absolute;
+    z-index: 2;
+    top: $space-377;
+    display: inline-block;
+    height: 11.5rem;
+    width: 23.4375rem;
+  }
+}

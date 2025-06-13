@@ -1,2 +1,18 @@
-@import './styles/variables';
-@import './styles/base/_reset';
+@import './styles/utilities/variables';
+@import './styles/base/reset';
+@import './styles/components/header';
+@import './styles/components/logo';
+
+.header__title {
+  font-family: $font-fraunces;
+}
+
+.logo__apply,
+.header__learn {
+  font-family: $font-manrope;
+}
+
+.recommendation__founder,
+.footer__image {
+  display: none;
+}
