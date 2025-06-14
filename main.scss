@@ -2,13 +2,18 @@
 @import './styles/base/reset';
 @import './styles/components/header';
 @import './styles/components/logo';
+@import './styles/components/content';
+@import './styles/components/list';
 
-.header__title {
+.header__title,
+.list__counter,
+.list__subtitle {
   font-family: $font-fraunces;
 }
 
 .logo__apply,
-.header__learn {
+.header__learn,
+.list__content {
   font-family: $font-manrope;
 }
 
