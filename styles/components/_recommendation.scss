@@ -1,3 +1,48 @@
 .recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: $space-112;
+  height: 39.0625rem;
+
+  &__founder {
+    display: inline-block;
+    height: 11.5rem;
+    width: 11.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-32;
+    padding: $space-32;
+    height: 24.5625rem;
+    width: 20.3125rem;
+    color: $white;
+    background: $purple-900;
+  }
+
+  &__title {
+    line-height: $line-height-120;
+    font-size: $text-31;
+    font-weight: $font-semibold;
+  }
+
+  &__text {
+    line-height: $line-height-180;
+    text-align: center;
+  }
+
+  &__apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.3125rem;
+    width: 11.9375rem;
+    background: $green;
+    color: $purple-900;
+    line-height: $line-height-180;
+    font-weight: $font-bold;
+  }
 }

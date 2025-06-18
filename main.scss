@@ -9,17 +9,19 @@
 
 .header__title,
 .list__counter,
-.list__subtitle {
+.list__subtitle,
+.recommendation__title {
   font-family: $font-fraunces;
 }
 
 .logo__apply,
 .header__learn,
-.list__content {
+.list__content,
+.recommendation__text,
+.recommendation__apply {
   font-family: $font-manrope;
 }
 
-.recommendation__founder,
 .footer__image {
   display: none;
 }
