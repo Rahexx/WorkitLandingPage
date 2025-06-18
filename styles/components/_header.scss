@@ -5,19 +5,10 @@
   align-items: center;
   height: 28.5625rem;
   padding: $space-32 $space-20;
-  margin-bottom: $space-80;
   background: $purple-900;
 
   &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -20px;
-    left: -10%;
-    height: 92px;
-    width: 120%;
-    background: $purple-900;
-    border-radius: 50%;
+    @include backgroundDecorator($purple-900, -20px, 2);
   }
 
   &__title {
@@ -55,7 +46,7 @@
 
   &__hero {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: $space-377;
     display: inline-block;
     height: 11.5rem;

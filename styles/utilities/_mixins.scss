@@ -1,0 +1,12 @@
+@mixin backgroundDecorator($color, $bottom, $zindex) {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: $bottom;
+  left: -10%;
+  height: 92px;
+  width: 120%;
+  background: $color;
+  border-radius: 50%;
+  z-index: $zindex;
+}

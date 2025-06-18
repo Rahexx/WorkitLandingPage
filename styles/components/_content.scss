@@ -1,3 +1,10 @@
 .content {
-  padding-top: $space-64;
+  position: relative;
+  padding: $space-144 0 0;
+  background: $purple-100;
+  z-index: 1;
+
+  &::after {
+    @include backgroundDecorator($purple-100, -30px, -1);
+  }
 }

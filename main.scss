@@ -1,9 +1,11 @@
 @import './styles/utilities/variables';
+@import './styles/utilities/mixins';
 @import './styles/base/reset';
 @import './styles/components/header';
 @import './styles/components/logo';
 @import './styles/components/content';
 @import './styles/components/list';
+@import './styles/components/recommendation';
 
 .header__title,
 .list__counter,
@@ -20,4 +22,8 @@
 .recommendation__founder,
 .footer__image {
   display: none;
+}
+
+.container {
+  background: $white;
 }
