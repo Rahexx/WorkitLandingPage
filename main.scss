@@ -6,6 +6,7 @@
 @import './styles/components/content';
 @import './styles/components/list';
 @import './styles/components/recommendation';
+@import './styles/components/footer';
 
 .header__title,
 .list__counter,
@@ -20,10 +21,6 @@
 .recommendation__text,
 .recommendation__apply {
   font-family: $font-manrope;
-}
-
-.footer__image {
-  display: none;
 }
 
 .container {

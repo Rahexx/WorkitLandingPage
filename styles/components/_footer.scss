@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $space-56;
+  height: 16.25rem;
+  width: 23.4375rem;
+
+  &__image {
+    display: inline-block;
+    height: 1.5382rem;
+    width: 5.985rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $space-28;
+    height: 1.25rem;
+    width: 7.25rem;
+  }
+}
