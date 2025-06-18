@@ -23,6 +23,11 @@
   font-family: $font-manrope;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .container {
   background: $white;
+  overflow-x: hidden;
 }
