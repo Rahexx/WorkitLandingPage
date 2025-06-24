@@ -53,3 +53,36 @@
     width: 20rem;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .header {
+    height: 30, 25rem;
+    padding: $space-32 $space-44;
+
+    &::after {
+      @include backgroundDecorator($purple-900, -20px, 2);
+    }
+
+    &__title {
+      width: 35rem;
+      font-size: $text-60;
+    }
+
+    &__underline::after {
+      width: 13.25rem;
+    }
+
+    &__learn {
+      height: 3.5rem;
+      width: 10.125rem;
+      font-size: $text-18;
+      z-index: 4;
+    }
+
+    &__hero {
+      top: $space-380;
+      height: 18.5rem;
+      width: 37.6756rem;
+    }
+  }
+}

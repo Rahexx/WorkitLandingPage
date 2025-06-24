@@ -9,4 +9,11 @@
   background: $color;
   border-radius: 50%;
   z-index: $zindex;
+
+  @media (min-width: $breakpoint-tablet) {
+    bottom: calc($bottom * 3);
+    left: -10vw;
+    height: 20vw;
+    width: 120vw;
+  }
 }
