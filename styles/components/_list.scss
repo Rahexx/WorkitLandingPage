@@ -46,3 +46,29 @@
     text-align: center;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .list {
+    margin-top: $space-56;
+    padding-bottom: $space-44;
+
+    &__item {
+      flex-direction: row;
+      gap: $space-56;
+    }
+
+    &__text {
+      align-items: start;
+      gap: $space-28;
+      width: 36rem;
+    }
+
+    &__subtitle {
+      font-size: $text-28;
+    }
+
+    &__content {
+      text-align: start;
+    }
+  }
+}
