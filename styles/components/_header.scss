@@ -52,11 +52,16 @@
     height: 11.5rem;
     width: 20rem;
   }
+
+  &__decorator {
+    display: none;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
   .header {
-    height: 30, 25rem;
+    position: relative;
+    height: 30.25rem;
     padding: $space-32 $space-44;
 
     &::after {
@@ -83,6 +88,22 @@
       top: $space-380;
       height: 18.5rem;
       width: 37.6756rem;
+    }
+
+    &__decorator {
+      position: absolute;
+      display: inline-block;
+
+      &--left {
+        top: 3.625rem;
+        left: -9rem;
+      }
+
+      &--right {
+        top: 16.375rem;
+        right: -5.855rem;
+        z-index: 3;
+      }
     }
   }
 }
