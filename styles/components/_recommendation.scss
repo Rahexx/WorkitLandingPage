@@ -48,6 +48,10 @@
     line-height: $line-height-180;
     font-weight: $font-bold;
   }
+
+  &__decorator {
+    display: none;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -87,6 +91,13 @@
     &__apply {
       height: 3.5rem;
       width: 12.9375rem;
+    }
+
+    &__decorator {
+      position: absolute;
+      bottom: -7.090625rem;
+      right: 3.606875rem;
+      display: inline-block;
     }
   }
 }
