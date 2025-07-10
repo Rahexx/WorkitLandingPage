@@ -6,6 +6,7 @@
   gap: $space-56;
   height: 16.25rem;
   width: 23.4375rem;
+  margin: 0 auto;
 
   &__image {
     display: inline-block;
@@ -19,5 +20,11 @@
     gap: $space-28;
     height: 1.25rem;
     width: 7.25rem;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .footer {
+    height: 16.25rem;
   }
 }
