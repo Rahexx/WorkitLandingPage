@@ -12,3 +12,10 @@
     border-bottom: 3px solid $green;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .logo {
+    width: 70rem;
+    margin: 0 auto;
+  }
+}
