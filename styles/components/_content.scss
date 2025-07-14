@@ -18,3 +18,9 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .content {
+    padding: $space-432 0 0;
+  }
+}

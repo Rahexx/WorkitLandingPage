@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
-    width: 48px;
+    height: 3rem;
+    width: 3rem;
     border: 1px solid $purple-500;
     color: $purple-900;
     font-size: $text-20;
@@ -69,6 +69,43 @@
 
     &__content {
       text-align: start;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .list {
+    flex-direction: row;
+    justify-content: center;
+    gap: $space-32;
+    margin-top: $space-88;
+    padding-bottom: $space-144;
+
+    &__item {
+      height: $space-352;
+      width: 22rem;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    &__counter {
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: $text-24;
+    }
+
+    &__text {
+      align-items: center;
+      width: $space-352;
+    }
+
+    &__subtitle {
+      font-size: $text-32;
+    }
+
+    &__content {
+      font-size: $text-18;
+      text-align: center;
     }
   }
 }
