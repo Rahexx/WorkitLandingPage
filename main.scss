@@ -1,0 +1,33 @@
+@import './styles/utilities/variables';
+@import './styles/utilities/mixins';
+@import './styles/base/reset';
+@import './styles/components/header';
+@import './styles/components/logo';
+@import './styles/components/content';
+@import './styles/components/list';
+@import './styles/components/recommendation';
+@import './styles/components/footer';
+
+.header__title,
+.list__counter,
+.list__subtitle,
+.recommendation__title {
+  font-family: $font-fraunces;
+}
+
+.logo__apply,
+.header__learn,
+.list__content,
+.recommendation__text,
+.recommendation__apply {
+  font-family: $font-manrope;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  background: $white;
+  overflow-x: hidden;
+}

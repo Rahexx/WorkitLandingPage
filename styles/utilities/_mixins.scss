@@ -1,0 +1,25 @@
+@mixin backgroundDecorator($color, $bottom, $zindex) {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: calc($bottom * 1.7);
+  left: -10vw;
+  height: 20vw;
+  width: 120vw;
+  background: $color;
+  border-radius: 50%;
+  z-index: $zindex;
+
+  @media (min-width: $breakpoint-tablet) {
+    bottom: calc($bottom * 3);
+    left: -10vw;
+    height: 20vw;
+    width: 120vw;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    left: -25vw;
+    height: 25vw;
+    width: 150vw;
+  }
+}

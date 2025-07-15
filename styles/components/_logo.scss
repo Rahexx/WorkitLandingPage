@@ -1,0 +1,21 @@
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__apply {
+    color: $white;
+    font-size: $text-18;
+    font-weight: $font-bold;
+    line-height: $line-height-180;
+    border-bottom: 3px solid $green;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .logo {
+    width: 70rem;
+    margin: 0 auto;
+  }
+}

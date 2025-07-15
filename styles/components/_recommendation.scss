@@ -1,0 +1,141 @@
+.recommendation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $space-112;
+  height: 39.0625rem;
+
+  &__founder {
+    display: inline-block;
+    height: 11.5rem;
+    width: 11.5rem;
+  }
+
+  &__content {
+    position: absolute;
+    top: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-32;
+    padding: $space-32;
+    height: 24.5625rem;
+    width: 20.3125rem;
+    color: $white;
+    background: $purple-900;
+  }
+
+  &__title {
+    line-height: $line-height-120;
+    font-size: $text-31;
+    font-weight: $font-semibold;
+  }
+
+  &__text {
+    line-height: $line-height-180;
+    text-align: center;
+  }
+
+  &__apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.3125rem;
+    width: 11.9375rem;
+    background: $green;
+    color: $purple-900;
+    line-height: $line-height-180;
+    font-weight: $font-bold;
+  }
+
+  &__decorator {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    margin: $space-72 auto 0;
+    padding: 0 $space-44;
+    height: 41.875rem;
+    width: 48rem;
+
+    &__founder {
+      position: absolute;
+      top: $space-112;
+      left: $space-44;
+      height: 17.5rem;
+      width: 17.5rem;
+    }
+
+    &__content {
+      top: 17.5rem;
+      left: $space-220;
+      align-items: start;
+      padding: $space-48;
+      height: 24.375rem;
+      width: 31.5rem;
+    }
+
+    &__title {
+      font-size: $text-48;
+    }
+
+    &__text {
+      text-align: start;
+    }
+
+    &__apply {
+      height: 3.5rem;
+      width: 12.9375rem;
+      font-size: $text-18;
+    }
+
+    &__decorator {
+      position: absolute;
+      bottom: -7.090625rem;
+      right: 3.606875rem;
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    margin: $space-112 auto 0;
+    padding: 0 $space-160;
+    height: 43.1875rem;
+    width: 87.5rem;
+
+    &__founder {
+      left: $space-160;
+      height: 29.8125rem;
+      width: 29.8125rem;
+    }
+
+    &__content {
+      left: $space-550;
+      padding: $space-64;
+      height: 25.6875rem;
+      width: 45.625rem;
+    }
+
+    &__title {
+      font-size: $text-56;
+    }
+
+    &__text {
+      font-size: $text-18;
+    }
+
+    &__decorator {
+      bottom: -5rem;
+      right: 16.73rem;
+    }
+  }
+}

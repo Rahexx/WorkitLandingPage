@@ -1,0 +1,26 @@
+.content {
+  position: relative;
+  padding: $space-144 0 0;
+  background: $purple-100;
+  z-index: 1;
+
+  &::after {
+    @include backgroundDecorator($purple-100, -30px, -1);
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .content {
+    padding: $space-192 0 0;
+
+    &::after {
+      @include backgroundDecorator($purple-100, -20px, -1);
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .content {
+    padding: $space-432 0 0;
+  }
+}

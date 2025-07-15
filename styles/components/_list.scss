@@ -1,0 +1,111 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-32;
+  padding-bottom: $space-64;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $space-24;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid $purple-500;
+    color: $purple-900;
+    font-size: $text-20;
+    font-weight: $font-semibold;
+    border-radius: 50%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-16;
+    width: 20.9375rem;
+  }
+
+  &__subtitle {
+    color: $purple-900;
+    font-size: $text-24;
+    font-weight: $font-semibold;
+    line-height: $line-height-120;
+  }
+
+  &__content {
+    color: $purple-900;
+    line-height: $line-height-180;
+    text-align: center;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .list {
+    margin-top: $space-56;
+    padding-bottom: $space-44;
+
+    &__item {
+      flex-direction: row;
+      gap: $space-56;
+    }
+
+    &__text {
+      align-items: start;
+      gap: $space-28;
+      width: 36rem;
+    }
+
+    &__subtitle {
+      font-size: $text-28;
+    }
+
+    &__content {
+      text-align: start;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .list {
+    flex-direction: row;
+    justify-content: center;
+    gap: $space-32;
+    margin-top: $space-88;
+    padding-bottom: $space-144;
+
+    &__item {
+      height: $space-352;
+      width: 22rem;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    &__counter {
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: $text-24;
+    }
+
+    &__text {
+      align-items: center;
+      width: $space-352;
+    }
+
+    &__subtitle {
+      font-size: $text-32;
+    }
+
+    &__content {
+      font-size: $text-18;
+      text-align: center;
+    }
+  }
+}
