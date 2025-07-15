@@ -91,6 +91,7 @@
     &__apply {
       height: 3.5rem;
       width: 12.9375rem;
+      font-size: $text-18;
     }
 
     &__decorator {
@@ -98,6 +99,43 @@
       bottom: -7.090625rem;
       right: 3.606875rem;
       display: inline-block;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    margin: $space-112 auto 0;
+    padding: 0 $space-160;
+    height: 41.875rem;
+    width: 87.5rem;
+
+    &__founder {
+      left: $space-160;
+      height: 29.8125rem;
+      width: 29.8125rem;
+    }
+
+    &__content {
+      left: $space-550;
+      padding: $space-64;
+      height: 25.6875rem;
+      width: 45.625rem;
+    }
+
+    &__title {
+      font-size: $text-56;
+    }
+
+    &__text {
+      font-size: $text-18;
+    }
+
+    &__decorator {
+      bottom: -5rem;
+      right: 16.73rem;
     }
   }
 }
