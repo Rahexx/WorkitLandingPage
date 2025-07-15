@@ -28,3 +28,9 @@
     height: 16.25rem;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .footer {
+    height: 20.288125rem;
+  }
+}
