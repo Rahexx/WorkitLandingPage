@@ -643,4 +643,10 @@ html {
   overflow-x: hidden;
 }
 
+@media (min-width: 87.5rem) {
+  html {
+    overflow-x: unset;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
