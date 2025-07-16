@@ -17,5 +17,14 @@
   .logo {
     width: 70rem;
     margin: 0 auto;
+
+    &__apply {
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $green;
+      }
+    }
   }
 }

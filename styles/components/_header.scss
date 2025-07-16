@@ -128,6 +128,18 @@
       width: 16.1875rem;
     }
 
+    &__learn {
+      width: 10.2rem;
+      outline: 2px solid $green;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        background: transparent;
+        color: $green;
+      }
+    }
+
     &__hero {
       top: $space-491;
       height: 27.5625rem;

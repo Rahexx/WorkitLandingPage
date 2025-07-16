@@ -262,6 +262,16 @@ a {
   .header__underline::after {
     width: 16.1875rem;
   }
+  .header__learn {
+    width: 10.2rem;
+    outline: 2px solid hsl(150, 100%, 63%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .header__learn:hover {
+    background: transparent;
+    color: hsl(150, 100%, 63%);
+  }
   .header__hero {
     top: 30.6875rem;
     height: 27.5625rem;
@@ -294,6 +304,13 @@ a {
   .logo {
     width: 70rem;
     margin: 0 auto;
+  }
+  .logo__apply {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .logo__apply:hover {
+    color: hsl(150, 100%, 63%);
   }
 }
 .content {
@@ -580,6 +597,15 @@ a {
   }
   .recommendation__text {
     font-size: 1.125rem;
+  }
+  .recommendation__apply {
+    outline: 2px solid hsl(150, 100%, 63%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .recommendation__apply:hover {
+    background: transparent;
+    color: hsl(150, 100%, 63%);
   }
   .recommendation__decorator {
     bottom: -5rem;
