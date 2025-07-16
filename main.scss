@@ -31,9 +31,3 @@ html {
   background: $white;
   overflow-x: hidden;
 }
-
-@media (min-width: $breakpoint-desktop) {
-  html {
-    overflow-x: unset;
-  }
-}
